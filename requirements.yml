@@ -1,0 +1,4 @@
+---
+- name: EGI-Foundation.umd
+- name: EGI-Foundation.voms-client
+- name: EGI-Foundation.ui
