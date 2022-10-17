@@ -31,3 +31,13 @@ resource "openstack_compute_floatingip_associate_v2" "egi_ui_fip_1" {
   instance_id = "${openstack_compute_instance_v2.egi_ui.id}"
   floating_ip = "${openstack_networking_floatingip_v2.egi_ui_floatip_1.address}"
 }
+
+# Create inventory file for ansible
+resource "local_file" "hosts_cfg" {
+  content = templatefile("${path.module}/hosts.cfg.tpl",
+    {
+      ui = "${openstack_networking_floatingip_v2.egi_ui_floatip_1.address}"
+    }
+  )
+  filename = "./inventory/hosts.cfg"
+}
