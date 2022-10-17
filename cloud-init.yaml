@@ -1,0 +1,18 @@
+#cloud-config
+---
+users:
+  - name: egi
+    gecos: EGI
+    primary_group: egi
+    groups: users, docker
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_import_id:
+      - gh:gwarf
+
+packages:
+  - vim
+
+package_update: true
+package_upgrade: true
+package_reboot_if_required: true
