@@ -41,6 +41,11 @@ Once terraform is installed locally, you can make use of it.
 
 Setting up the environment (OS\_\* variables will be used by terraform):
 
+> This assumes a working setup of
+> [fedcloudclient](https://fedcloudclient.fedcloud.eu/), possibly relying on
+> [oidc-agent](https://indigo-dc.gitbook.io/oidc-agent/installation) to get OIDC
+> tokens from [EGI Check-in](https://docs.egi.eu/users/aai/check-in/).
+
 ```shell
 source ~/.virtualenvs/ssc-ui-deployment/bin/activate
 export EGI_VO='vo.access.egi.eu'
