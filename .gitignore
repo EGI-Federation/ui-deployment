@@ -3,4 +3,4 @@
 .terraform.lock.hcl
 .terraform/
 terraform.tfstate*
-.inventory/
+inventory/hosts.cfg
