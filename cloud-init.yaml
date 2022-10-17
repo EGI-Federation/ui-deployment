@@ -5,7 +5,7 @@ users:
   - name: egi
     gecos: EGI
     primary_group: egi
-    groups: users, docker
+    groups: users
     shell: /bin/bash
     sudo: ALL=(ALL) NOPASSWD:ALL
     ssh_import_id:
