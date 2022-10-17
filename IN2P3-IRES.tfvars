@@ -7,8 +7,8 @@ public_ip_pool = "ext-net"
 # Flavor: m1.medium
 flavor_id = "ab1fbd4c-324d-4155-bd0f-72f077f0ebce"
 
-# Image: EGI Ubuntu 22.04
-image_id = "fc6c83a3-845f-4f29-b44d-2584f0ca4177"
+# Image: CentOS 7 with docker
+image_id = "8901c279-8aee-4b5b-be03-d4460cfe4008"
 
 # Security groups
 security_groups  = ["default"]
