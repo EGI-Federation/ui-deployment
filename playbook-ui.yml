@@ -1,0 +1,7 @@
+---
+- name: Deploy UI
+  hosts: ui
+  roles:
+    - EGI-Foundation.umd
+    - EGI-Foundation.voms-client
+    - EGI-Foundation.ui
