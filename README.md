@@ -59,6 +59,9 @@ export OS_TOKEN=$(fedcloud openstack token issue --site "$EGI_SITE" --vo "$EGI_V
 Configure flavor, image, network variables for the site you want to use, see
 example of [`IN2P3-IRES.tfvars`](IN2P3-IRES.tfvars).
 
+Review/adapt [cloud-init.yaml](cloud-init.yaml) to add your ssh key to the `egi`
+user that will be created, without this you won't be able to log into the VM.
+
 ```shell
 # Initialise working directory, install dependencies
 terraform init
