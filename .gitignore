@@ -2,3 +2,4 @@
 .python-version
 .terraform.lock.hcl
 .terraform/
+terraform.tfstate*
