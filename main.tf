@@ -1,4 +1,4 @@
-# Terrafrom versions and providers
+# Terraform versions and providers
 terraform {
   required_version = ">= 0.14.0"
   required_providers {
@@ -14,9 +14,9 @@ resource "openstack_networking_floatingip_v2" "egi_ui_floatip_1" {
   pool = var.public_ip_pool
 }
 
-# Creating the scorebaord server
+# Creating the VM
 resource "openstack_compute_instance_v2" "egi_ui" {
-  name = "scoreboard"
+  name = "ui"
   image_id = var.image_id
   flavor_id = var.flavor_id
   security_groups = var.security_groups
