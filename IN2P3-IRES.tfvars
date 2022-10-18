@@ -8,7 +8,11 @@ public_ip_pool = "ext-net"
 flavor_id = "ab1fbd4c-324d-4155-bd0f-72f077f0ebce"
 
 # Image: EGI CentOS 8
+# https://appdb.egi.eu/store/vappliance/egi.centos.8
 image_id = "38ced5bf-bbfd-434b-ae41-3ab35d929aba"
+# Image: EGI Ubuntu 22.04
+# https://appdb.egi.eu/store/vappliance/egi.ubuntu.22.04
+# image_id = "fc6c83a3-845f-4f29-b44d-2584f0ca4177"
 
 # Security groups
 security_groups  = ["default"]
