@@ -3,5 +3,5 @@
   hosts: ui
   roles:
     - { role: EGI-Foundation.umd, release: 4 }
-    # - EGI-Foundation.voms-client
-    # - EGI-Foundation.ui
+    - EGI-Foundation.voms-client
+    - EGI-Foundation.ui
