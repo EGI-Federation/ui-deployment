@@ -8,9 +8,9 @@ Python 3.
 
 ```shell
 # Create a python3 virtualenv
-python3 -m venv ~/.virtualenvs/ssc-ui-deployment
+python3 -m venv ~/.virtualenvs/ui-deployment
 # Activate virtual env
-source ~/.virtualenvs/ssc-ui-deployment/bin/activate
+source ~/.virtualenvs/ui-deployment/bin/activate
 # Install required python modules
 pip install -r requirements.txt
 # Install required ansible modules
@@ -21,7 +21,7 @@ ansible-galaxy install -r requirements.yml
 
 ```shell
 # Activate virtual env
-source ~/.virtualenvs/ssc-ui-deployment/bin/activate
+source ~/.virtualenvs/ui-deployment/bin/activate
 ```
 
 ## Creating the VM with terraform
@@ -47,7 +47,7 @@ Setting up the environment (OS\_\* variables will be used by terraform):
 > tokens from [EGI Check-in](https://docs.egi.eu/users/aai/check-in/).
 
 ```shell
-source ~/.virtualenvs/ssc-ui-deployment/bin/activate
+source ~/.virtualenvs/ui-deployment/bin/activate
 export EGI_VO='vo.access.egi.eu'
 export EGI_SITE='IN2P3-IRES'
 # A valid OIDC_ACCESS_TOKEN should be available in the env
