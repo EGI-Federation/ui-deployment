@@ -4,3 +4,4 @@
 .terraform/
 terraform.tfstate*
 inventory/hosts.cfg
+cloud-init.yaml

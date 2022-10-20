@@ -1,0 +1,18 @@
+#cloud-config
+---
+users:
+  - name: egi
+    gecos: EGI
+    primary_group: egi
+    groups: users
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys:
+      - <SSH_PUBLIC_KEY>
+
+packages:
+  - vim
+
+package_update: true
+package_upgrade: true
+package_reboot_if_required: true

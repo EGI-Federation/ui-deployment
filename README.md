@@ -60,8 +60,10 @@ $ export OS_TOKEN=$(fedcloud openstack token issue --site "$EGI_SITE" \
 Configure flavor, image, network variables for the site you want to use, see
 example of [`IN2P3-IRES.tfvars`](IN2P3-IRES.tfvars).
 
-Review/adapt [cloud-init.yaml](cloud-init.yaml) to add your ssh key to the `egi`
-user that will be created, without this you won't be able to log into the VM.
+Create a `cloud-init.yaml` files based on
+[cloud-init-tpl.yaml](cloud-init-tpl.yaml), reviewing the content and at least
+adding your ssh key to the `egi` user that will be created, without this you
+won't be able to log into the VM.
 
 ```shell
 # Initialise working directory, install dependencies
