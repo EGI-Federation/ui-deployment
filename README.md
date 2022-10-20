@@ -39,6 +39,11 @@ platforms.
 
 Once terraform is installed locally, you can make use of it.
 
+> This repository is using the
+> [vo.access.egi.eu](https://docs.egi.eu/users/getting-started/#pilot-your-application)
+> Virtual Organisation (VO), this VO is only meant for piloting activities. A
+> dedicated VO should be used for production deployments.
+
 Setting up the environment (OS\_\* variables will be used by terraform):
 
 > This assumes a working setup of
